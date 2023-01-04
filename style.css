@@ -1,0 +1,103 @@
+a {
+    text-decoration: none;
+    color: blueviolet;;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    background: blueviolet;
+}
+
+button:active {
+    background-color: rgb(55, 17, 90);
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.description {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.header__title {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 100px;
+}
+
+.header__nav {
+    border-bottom: 3px solid black;
+}
+
+.header__nav-btm {
+    display: none;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 30px 0px;
+}
+
+.content {
+    display: none;
+}
+
+.content_active {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-active {
+    display: block;
+}
+
+/* bank */
+
+.bank__list {
+    list-style: circle;
+}
+
+.bank__link {
+    color: blueviolet;
+}
+
+
+/* visa  */
+
+.text {
+    margin-bottom: 15px;
+}
+
+.text-get {
+    margin-bottom: 2px;
+}

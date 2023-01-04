@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С'EST PARIS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+        <header class="header">
+            <div class="header__container container">
+                <h2 class="header__title">
+                    C'EST LA FRANCE
+                </h2>
+                
+                <nav class="header__nav header__nav-top">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn" data-path="one">
+                                ЖИЛЬЕ
+                            </button>                            
+                        </li>
+
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn header_nav_btn--visa" data-path="two">
+                                ВИЗА
+                            </button>                            
+                        </li>
+
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn btn-bank" data-path="three">
+                                БАНКИ
+                            </button>                            
+                        </li>
+
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn" data-path="four">
+                                ОДЕЖДА
+                            </button>                            
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav header__nav-btm header__nav-bank">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn-sub" data-path="three-one">
+                                NICKEL
+                            </button>                            
+                        </li>
+
+                        <li class="header__nav-item">
+                            <button class="header__nav_btn-sub header_nav_btn--visa" data-path="three-two">
+                                REVOLUT
+                            </button>                            
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main main-content">
+            <section class="housing content" data-target="one">
+                <div class="main-container container">
+                    <h2 class="title">
+                        КАК МЫ СНЯЛИ ЖИЛЬЕ
+                    </h2>
+                    <p class="description">
+                        Отзывы успешно нашедших дом
+                    </p>
+                    <a href="https://docs.google.com/document/d/1frSogYGvPHY1USCIuEYhK163c6qT_7SsqZbwu5J2IOw/edit" target="_blank" rel="noopener noreferrer">Пройти по ссылке</a>
+
+                </div>
+            </section>
+
+            <section class="bank content content_active" data-target="three-one">
+                <div class="main__container container">
+                   <h2 class="bank__title">
+                        Nickel
+                   </h2>
+                   <p class="bank__description description">
+                        Инструкция по открытию счёта
+                   </p>
+                   <ul class="bank__list">
+                        <li class="bank__item">
+                            Оформить заявку на сайте <a class="bank__link" href="http://nickel.eu" target="_blank">(nickel.eu)</a> - если указать налоговое резидентство только Франции, никаких проблем вообще, если указать налоговое резидентство еще и РФ - заблокируют счет и попросят прислать специальную справку. внимание: обязательно наличие французского номера телефона! 
+                        </li>
+                        <li class="bank__item">
+                            после получения пин-кода получить физическую карту в табачном киоске и сразу положить на нее наличные, тогда не будет комиссии с первого пополнения. внимание: любое пополнение наличными - 2% от суммы!
+                        </li>
+                        <li class="bank__item">
+                            активировать карту. если возникнут проблемы с налоговым резидентством РФ, заполнить форму FATCA (есть на сайте банка), подписать и отправить на почту <a class="bank__link" href="mailto:sos@compte-nickel.fr" target="_blank">sos@compte-nickel.fr</a> вместе с паспортом и всеми данными (могут потребовать специальную форму для их ввода с подписью как в паспорте)
+                        </li>
+                        <li class="bank__item">
+                            если не будет ответа, звонить в поддержку и просить активировать карту, по идее делают довольно быстро, в течение нескольких дней, но скорее всего придется звонить и выяснять в любом случае  
+                        </li>
+                        <li class="bank__item">
+                            пользоваться везде в Европе, пополнять с помощью переводов с иностранных счетов (тогда нет комиссии) 
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="visa content" data-target="two">
+                <div class="visa__container container">
+                    <h2 class="visa__title">
+                        APS
+                    </h2>
+                    <p class="visa__description description">
+                        Инструкция для получения и пролонгации
+                    </p>
+                    <h3 class="visa__title-aps">
+                        Трансформация визы типа VLST в APS
+                    </h3>
+                    <p class="visa__text-aps">
+                        Надо отправмить e-mail в префектуры по месту проживания
+                    </p>
+                    <p class="visa__text-aps">
+                        К письму приложить: паспорт, визу, штамп о въезде и justificatif de domicile ( например, письмо от хозяина квартиры или официального арендатора, что вы живете у него или унее.- attestation d’heberegement <a href="http://https://www.service-public.fr/simulateur/calcul/AttestationHebergement">https://www.service-public.fr/simulateur/calcul/AttestationHebergement</a>  + его или ее паспорт, и счет за ЖКХ где есть их имя))
+                    </p>
+                        <p class="visa__text-aps">
+                            Текст:
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Madame, Monsieur,
+                        </p>
+                        
+                        <p class="visa__text-aps-get">
+                            Je m’appelle … (имя фамилия), je suis de nationalité Russe et j’ai dû quitter la
+                            Russie en … (месяц) 2022 à cause de la situation politique actuelle.
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Le Ministère de l’Intérieur Français m’a informé via l’Institut Français de Russie à
+                            Moscou que je fais partie de la liste de personnes d’intérêt auxquels un titre de
+                            séjour de type APS peut être accordé à la base de ce type de visa.
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Actuellement, je suis à … (город, откуда у вас есть бумажка о регистрации от
+                            приятеля, осторожно пригород Парижа - это не Париж) et je voudrais savoir
+                            quelles sont les démarches à entreprendre pour pouvoir demander ce titre.
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Je vous prie de me renseigner à ce sujet.
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Je joins à ce message la copie de mon passeport, de mon visa et du tampon
+                            d’entrée sur l’espace Schengen, ainsi que mon justificatif de domicile.
+                        </p>
+    
+                        <p class="visa__text-aps-get">
+                            Cordialement,
+                            (имя фамилия)    
+                        </p>
+                        <h3 class="visa__title-aps">
+                            Продление APS
+                        </h3>
+                        <p class="visa__text-aps">
+                            Надо отправмить e-mail в префектуры по месту проживания
+                        </p>
+                        <p class="visa__text-aps">
+                            За 2 месяца до окончания срока действия APS надо снова написать email в префектуру, которая вам выдала APS и попросить о продлении.
+                        </p>
+                        <p class="visa__text-aps">
+                            Можно написать примерно такой текст:
+                        </p>
+                        <p class="visa__text-aps">
+                            Madame, Monsieur,
+                        </p>
+                        <p class="visa__text-aps-get">
+                            Je m’appelle ... (имя фамилия), je suis de nationalité Russe et j’ai dû quitter la Russie en ...(месяц) 2022 à cause de la situation politique actuelle.
+                        </p>
+                        <p class="visa__text-aps-get">
+                            Le Ministère de l’Intérieur Français m’a informé via l’Institut Français de Russie à Moscou que je fais partie de la liste de personnes d’intérêt auxquels un titre de séjour de type APS peut être accordé, et je l’ai obtenu …. (когда). L’Institut Français de Russie à Moscou m’a informé également que je dois m’adresser de nouveau à la prefecture pour prolonger ce meme titre de séjour de type APS, et que en tant qu’une personne d’intérêt je suis libéré(e если женщина) de piece justifiante supplémentaires.
+                        </p>
+                        <p class="visa__text-aps-get">
+                            Je joins à ce message la copie de mon passeport, de mon APS actuel, ainsi que mon justificatif de domicile.
+                        </p>
+                        <p class="visa__text-aps">
+                            Cordialement, (имя фамилия)
+                        </p>
+                        <p class="visa__text-aps">
+                            К письму приложить копию паспорта и предыдущего APS, подтверждение проживания.
+                        </p>
+                        <h3 class="visa__title-aps">
+                            NB
+                        </h3>
+                        <p class="visa__text-aps">
+                            Как мы уже много раз говорили, выдача и продление APS — это дипломатическо решение, так что некоторые префектуры вообще не в курсе, о чем речь. Если префектура по месту реального жительства не отвечает или требует от вас предоставить рабочий контракт, то попробуйте найти адрес “проживания” в Париже и отправить этот email на <a href="mailto:pp-dim-sae-urgence-ukraine@interieur.gouv.fr" target="_blank" rel="noopener noreferrer">pp-dim-sae-urgence-ukraine@interieur.gouv.fr</a>
+                        </p>
+    
+                </div>
+            </section>
+
+            <section class="clothes content" data-target="four">
+                <div class="main-conteiner container">
+                    <h2 class="clothes__title">КАРТА СЕКОНД-ХЕНДОВ ПАРИЖА</h2>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1QJEo-uS3EPcNf7GtBCfFsewpDWIfKFI&ehbc=2E312F" width="100%" height="480"></iframe>
+                </div>
+                
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    
+
+</body>
+</html>
