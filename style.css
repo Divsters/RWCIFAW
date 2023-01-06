@@ -158,6 +158,10 @@ ul {
 
 /* visa  */
 
+.visa__container {
+    display: none;
+}
+
 .text {
     margin-bottom: 15px;
 }
